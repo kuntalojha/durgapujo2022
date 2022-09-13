@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: medium; */
+}
+
+header {
+  background-color: #c70039;
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  font-size: 60px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 10px;
+  color: beige;
+}
+section {
+  height: 100vh;
+}
+
+footer {
+  height: 20vh;
+}
+.day1 {
+  background-color: aqua;
+}
+
+.day2 {
+  background-color: chartreuse;
+}
+
+.day3 {
+  background-color: darkorange;
+}
+
+.day4 {
+  background-color: deepskyblue;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.nav {
+  margin-right: 50px;
+  text-transform: uppercase;
+  color: bisque;
+}
