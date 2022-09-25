@@ -44,12 +44,14 @@
 }
 
 :root {
-  --background-color: #c70039;
+  --background-color: #ff9999;
   --background-color1: #d84d74;
   --background-color2: #f9e6eb;
 
+  --textColor:#330000
   --colorWhite: #fff;
-  --red: red;
+  --red: #ff9999;
+  --iconColor:#4c0000;
 }
 
 html {
@@ -105,23 +107,37 @@ It's recommended to use pixel sizes that are a
 multiple of 8 (8, 16, 32, 64, etc.) 
 */
 
-ion-icon {
-  font-size: 16px;
-  color: #c70039;
+.icon {
+  height: 24px;
+  width: 24px;
+  color: var(--iconColor);
 }
 
-.ul li a :link,
-.ul li a :visited {
+ion-icon {
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.pandal:link,
+.pandal:visited {
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
   cursor: pointer;
+  color: #d84d74;
 }
 
-.ul li a :hover,
-.ul li a :active {
+.pandal:hover,
+.pandal:active {
   background-color: #fff;
   color: red;
+  border-radius: 999px;
+  padding: 5px;
 }
 
 /* --------------SECTION DAY 01 ------------------  */
@@ -141,12 +157,11 @@ ion-icon {
 
 .day1-div1 {
   /* background-color: blue; */
-  padding: 5%;
   /* width: 60%; */
 }
 
 .day1-div2 {
-  /* background-color: white; */
+  background-color: white;
   /* padding: 5%; */
   /* width: 40%; */
 }
