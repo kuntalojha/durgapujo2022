@@ -1,33 +1,156 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+    FONT SIZE SYSTEM (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    -- Font Weights:
+       Default: 400
+
+    -- Line Heights:
+    Default: 1
+
+
+--- 02 COLORS
+
+    Primary: #c70039
+
+  - Tints:#fce6e7
+          #f9e6eb
+  - Shades: #8b0028
+  - Accents:
+  - Greys:
+  #555
+  #333
+
+--- 05 SHADOWS
+
+--- 06 BORDER- RADIUS
+
+--- 07 WHITESPACE
+
+    SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"); */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-size: medium; */
+  font-family: serif;
+}
+
+:root {
+  --background-color: #c70039;
+  --background-color1: #d84d74;
+  --background-color2: #f9e6eb;
+
+  --colorWhite: #fff;
+  --red: red;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
 }
 
 header {
-  background-color: #c70039;
   position: fixed;
   width: 100%;
+  background-color: var(--red);
+  color: var(--color);
+  padding: 1rem;
+  height: auto;
 }
 
-a {
-  font-size: 60px;
-  font-weight: 600;
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-a {
+  font-size: 3rem;
+  font-weight: 400;
   text-decoration: none;
   margin: 10px;
-  color: beige;
+  color: var(--colorWhite);
 }
+
+.logo img {
+  height: 4.4rem;
+  width: 4.4rem;
+  border-radius: 100%;
+  margin-left: 30px;
+}
+
+.nav {
+  margin-right: 5rem;
+}
+
 section {
   height: 100vh;
 }
 
-footer {
-  height: 20vh;
+/*-------------------------- COMON ------------------*/
+/*
+ Or you can set a specific size by applying the 
+font-size CSS property on the ion-icon component. 
+It's recommended to use pixel sizes that are a 
+multiple of 8 (8, 16, 32, 64, etc.) 
+*/
+
+ion-icon {
+  font-size: 16px;
+  color: #c70039;
 }
+
+.ul li a :link,
+.ul li a :visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ul li a :hover,
+.ul li a :active {
+  background-color: #fff;
+  color: red;
+}
+
+/* --------------SECTION DAY 01 ------------------  */
+
 .day1 {
-  background-color: aqua;
+  padding-top: 6.5rem;
+  background-color: var(--background-color2);
+  height: 100vh;
+  display: flex;
 }
+
+.day1-div {
+  /* padding-top: 20px; */
+  display: flex;
+  padding: 5rem;
+}
+
+.day1-div1 {
+  /* background-color: blue; */
+  padding: 5%;
+  /* width: 60%; */
+}
+
+.day1-div2 {
+  /* background-color: white; */
+  /* padding: 5%; */
+  /* width: 40%; */
+}
+/* --------------SECTION DAY 01 ------------------  */
 
 .day2 {
   background-color: chartreuse;
@@ -41,22 +164,6 @@ footer {
   background-color: deepskyblue;
 }
 
-.head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  height: 60px;
-  width: 60px;
-  border-radius: 100%;
-  margin: 10px;
-  margin-left: 30px;
-}
-
-.nav {
-  margin-right: 50px;
-  text-transform: uppercase;
-  color: bisque;
+footer {
+  height: 20vh;
 }
