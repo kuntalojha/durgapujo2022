@@ -47,6 +47,8 @@
   --background-color: #ff9999;
   --background-color1: #d84d74;
   --background-color2: #f9e6eb;
+  --background-color3: #ffe0e0;
+  --background-color4:#ffebeb ;
 
   --textColor:#330000
   --colorWhite: #fff;
@@ -108,13 +110,8 @@ multiple of 8 (8, 16, 32, 64, etc.)
 */
 
 .icon {
-  height: 24px;
-  width: 24px;
-  color: var(--iconColor);
-}
-
-ion-icon {
   font-size: 24px;
+  /* color: var(--background-color1); */
 }
 
 li {
@@ -123,30 +120,30 @@ li {
   font-size: 3rem;
 }
 
+.pandal,
 .pandal:link,
 .pandal:visited {
   text-decoration: none;
   font-size: 2.4rem;
   text-transform: uppercase;
   cursor: pointer;
-  color: #d84d74;
+  color: var(--background-color1);
 }
 
 .pandal:hover,
 .pandal:active {
-  background-color: #fff;
-  color: red;
-  border-radius: 999px;
-  padding: 5px;
+  background-color:var(--background-color1);
+  color:var(--background-color4);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 /* --------------SECTION DAY 01 ------------------  */
 
 .day1 {
   padding-top: 6.5rem;
-  background-color: var(--background-color2);
+  background-color: var(--background-color4);
   height: 100vh;
-  display: flex;
 }
 
 .day1-div {
@@ -157,13 +154,16 @@ li {
 
 .day1-div1 {
   /* background-color: blue; */
-  /* width: 60%; */
+  width: 60%;
 }
 
 .day1-div2 {
   background-color: white;
-  /* padding: 5%; */
-  /* width: 40%; */
+  padding: 5%;
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 10px  #4c00000d ;
+  /* text-align: center; */
 }
 /* --------------SECTION DAY 01 ------------------  */
 
