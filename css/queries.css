@@ -1,0 +1,29 @@
+/* rem and em do NOT  depend on html font-size in media queries! 
+ Instead, 1rem = 1em = 1px*/
+
+/***************************************/
+/* BELOW 1200PX (Landscape Tablets) */
+/***************************************/
+
+@media (max-width: 75rem) {
+  html {
+    /* 9px / 16 px  =.5625 px (* 100) = 56.25%  */
+    font-size: 56.25%;
+  }
+
+  li {
+    /* padding: 1rem; */
+    font-size: 2rem;
+  }
+
+  .icon {
+    font-size: 20px;
+    /* color: var(--background-color1); */
+  }
+  .day1-div {
+    padding: 4rem;
+  }
+  .day1-div2 {
+    padding: 1% 2% 1% 2%;
+  }
+}
