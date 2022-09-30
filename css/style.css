@@ -50,6 +50,11 @@
   --background-color3: #ffe0e0;
   --background-color4:#ffebeb ;
 
+  --day1-div-background-color1: #ffebeb;
+  --day1-div-background-color2: #d9f1ff;
+  --day1-div-background-color3: #eae6eb;
+
+
   --textColor:#330000
   --colorWhite: #fff;
   --red: #ff9999;
@@ -125,6 +130,17 @@ multiple of 8 (8, 16, 32, 64, etc.)
   color: blue;
 }
 
+h1 {
+font-size: 10rem;
+padding-top: 4rem;
+padding-left: 6rem;
+color: #444;
+text-shadow: 10px 10px 10px 10px red;
+/* box-shadow: 10px 10px 10px 10px red; */
+}
+
+hr {
+}
 li {
   list-style: none;
   padding: 2rem;
@@ -155,11 +171,11 @@ li {
 
 .day1 {
   padding-top: 6.5rem;
-  background-color: var(--background-color4);
+  background:linear-gradient(var(--day1-div-background-color1), var(--day1-div-background-color2));
   /* height: 100vh; */
 }
 
-.day1-div {
+.day1-div, .day2-div {
   /* padding-top: 20px; */
   display: flex;
   padding: 5rem;
@@ -168,6 +184,8 @@ li {
 .day1-div1 {
   /* background-color: blue; */
   width: 60%;
+  box-shadow:  5px 5px 20px 5px rgba(241, 202, 202, 0.527);
+  border-radius: 15px;
 }
 
 .day1-div2 {
@@ -185,7 +203,8 @@ li {
 /* --------------SECTION DAY 01 ------------------  */
 
 .day2 {
-  background-color: chartreuse;
+ padding-top: 6.5rem;
+  background:linear-gradient(var(--day1-div-background-color2), var(--day1-div-background-color3));
 }
 
 .day3 {
